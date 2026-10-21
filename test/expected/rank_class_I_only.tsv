@@ -1,0 +1,5 @@
+rank	variant	gene	aa_change	dna_vaf	best_tier	both_classes	I_tier	I_ic50	I_allele	I_peptide	II_tier	II_ic50	II_allele	II_peptide
+1	chr2-300-301-A-AT	GENE3	FS88	0.167	Pass	no	Pass	12.5	HLA-A*02:01	SLYNTVATL				
+2	chr1-100-101-C-T	GENE1	A12V	0.25	Pass	no	Pass	45.2	HLA-A*02:01	KLVAVLLAL				
+3	chr4-700-703-CAAG-C	GENE7	K40del	0.1	Subclonal	no	Subclonal	320.0	HLA-B*07:02	RPHERNGFTV				
+4	chr5-800-801-G-A	GENE8	R7Q	0.4	Poor	no	Poor	30.0	HLA-A*24:02	YLQPRTFLL				

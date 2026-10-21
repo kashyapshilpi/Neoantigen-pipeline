@@ -1,0 +1,15 @@
+# environment.yml - every command-line tool except pVACseq (which runs in Docker).
+# Install once:  conda env create -f environment.yml  &&  conda activate neoantigen
+name: neoantigen
+channels: [conda-forge, bioconda]
+dependencies:
+  - fastp=0.23.4            # read trimming / QC
+  - bwa-mem2=2.2.1          # alignment
+  - samtools=1.21           # BAM handling
+  - bcftools=1.21           # VCF handling (+split-vep plugin)
+  - htslib=1.21             # tabix / bgzip
+  - gatk4=4.6.1.0           # MarkDuplicates, BQSR, Mutect2, HaplotypeCaller
+  - optitype=1.3.5          # HLA class I typing
+  - t1k                     # HLA class II typing
+  - ensembl-vep=113.0       # variant annotation
+  - whatshap=2.3            # read-based phasing

@@ -1,0 +1,7 @@
+chr1	100	C	T	missense_variant	GENE1	30,10	40,0
+chr1	200	G	A	synonymous_variant	GENE2	30,10	40,0
+chr2	300	A	AT	frameshift_variant	GENE3	25,5	30,0
+chr2	400	C	G	stop_gained	GENE4	10,5	30,0
+chr3	500	T	C	missense_variant	GENE5	50,10	30,3
+chr3	600	G	T	missense_variant&splice_region_variant	GENE6	80,3	30,0
+chr4	700	C	A	inframe_deletion	GENE7	90,10	50,1

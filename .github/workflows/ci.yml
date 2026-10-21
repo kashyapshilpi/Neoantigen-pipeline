@@ -1,0 +1,18 @@
+# ci.yml - runs on every push: syntax check, shellcheck, helper tests, and a full dry run with pretend tools.
+name: CI
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4                                   # get the code
+      - name: Bash syntax check                                     # every script must at least parse
+        run: find . -name '*.sh' -print0 | xargs -0 -n1 bash -n
+      - name: ShellCheck                                            # catches common shell mistakes (quoting, unused variables...)
+        run: shellcheck -S warning run_all.sh config.sh scripts/*.sh bin/*.sh test/*.sh
+      - name: Helper tests (HLA merge, TMB, ranking)                # awk helpers on small made-up inputs
+        run: bash test/run_tests.sh
+      - name: Helper tests with gawk                                # same tests with GNU awk, so both common awks work
+        run: sudo apt-get install -y gawk && mkdir -p /tmp/g && ln -sf "$(command -v gawk)" /tmp/g/awk && PATH=/tmp/g:$PATH bash test/run_tests.sh
+      - name: Full pipeline dry run                                 # all 7 steps with pretend tools: file hand-overs, resume, report
+        run: bash test/dry_run.sh

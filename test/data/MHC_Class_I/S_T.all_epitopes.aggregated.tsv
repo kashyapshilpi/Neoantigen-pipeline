@@ -1,0 +1,5 @@
+ID	Index	Gene	AA Change	Num Passing Transcripts	Best Peptide	Best Transcript	TSL	Allele	Pos	Num Passing Peptides	IC50 MT	IC50 WT	%ile MT	%ile WT	RNA Expr	RNA VAF	Allele Expr	RNA Depth	DNA VAF	Tier	Ref Match	Evaluation
+chr1-100-101-C-T	1.GENE1.ENST1.missense.12A/V	GENE1	A12V	1	KLVAVLLAL	ENST1	1	HLA-A*02:01	5	3	45.2	3000.1	0.3	5.1	NA	NA	NA	NA	0.25	Pass	False	Pending
+chr2-300-301-A-AT	2.GENE3.ENST3.FS.88	GENE3	FS88	1	SLYNTVATL	ENST3	1	HLA-A*02:01	2	5	12.5	NA	0.1	NA	NA	NA	NA	NA	0.167	Pass	False	Pending
+chr4-700-703-CAAG-C	3.GENE7.ENST7.inframe.40	GENE7	K40del	1	RPHERNGFTV	ENST7	1	HLA-B*07:02	3	1	320.0	400.0	1.5	2.0	NA	NA	NA	NA	0.1	Subclonal	False	Pending
+chr5-800-801-G-A	4.GENE8.ENST8.missense.7R/Q	GENE8	R7Q	1	YLQPRTFLL	ENST8	1	HLA-A*24:02	4	1	30.0	35.0	0.2	0.3	NA	NA	NA	NA	0.4	Poor	False	Pending

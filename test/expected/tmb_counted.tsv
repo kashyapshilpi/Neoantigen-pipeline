@@ -1,0 +1,4 @@
+chrom	pos	ref	alt	gene	consequence	depth	vaf
+chr1	100	C	T	GENE1	missense_variant	40	0.250
+chr2	300	A	AT	GENE3	frameshift_variant	30	0.167
+chr4	700	C	A	GENE7	inframe_deletion	100	0.100

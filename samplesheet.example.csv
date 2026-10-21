@@ -1,0 +1,5 @@
+patient,sample_type,fastq_1,fastq_2,hla_alleles
+PT001,normal,/data/PT001_N_R1.fastq.gz,/data/PT001_N_R2.fastq.gz,
+PT001,tumor,/data/PT001_T_R1.fastq.gz,/data/PT001_T_R2.fastq.gz,
+PT002,normal,/data/PT002_N_R1.fastq.gz,/data/PT002_N_R2.fastq.gz,HLA-A*02:01;HLA-A*11:01;HLA-B*07:02;HLA-B*40:01;HLA-C*07:02;HLA-C*03:04
+PT002,tumor,/data/PT002_T_R1.fastq.gz,/data/PT002_T_R2.fastq.gz,
